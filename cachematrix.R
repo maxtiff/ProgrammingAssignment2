@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## "makeCacheMatrix" creates a matrix object that can store a cache of its inverse. "cacheSolve" calls the inverse 
+## of the matrix object from "makeCacheMatrix" if it exists; if the inverse does not exists, "cacheSolve" 
+## will compute the inverse.
 
-## This function creates a matrix and a cache of its inverse.
+## This function creates a matrix object with the ability to store a cache of its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   # Declare variable to strore inverse
