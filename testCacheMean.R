@@ -5,21 +5,21 @@ makeVector <- function(x = numeric()) {
     m <<- NULL
   }
   get <- function() x
-  setmean <- function(mean) m <<- mean
-  getmean <- function() m
+  setInverse <- function() m <<- inverse
+  getInverse <- function() m
   list(set = set, get = get,
-       setmean = setmean,
-       getmean = getmean)
+       setInverse = setInverse,
+       getInverse = getInverse)
 }
 
 cachemean <- function(x, ...) {
-  m <- x$getmean()
+  m <- x$getinverse()
   if(!is.null(m)) {
     message("getting cached data")
     return(m)
   }
   data <- x$get()
-  m <- mean(data, ...)
-  x$setmean(m)
+  m <- Solve(data, ...)
+  x$setinverse(m)
   m
 }
