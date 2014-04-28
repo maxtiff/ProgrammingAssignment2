@@ -2,6 +2,7 @@
 ## of the matrix object from "makeCacheMatrix" if it exists; if the inverse does not exists, "cacheSolve" 
 ## will compute the inverse.
 
+
 ## This function creates a matrix object with the ability to store a cache of its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
