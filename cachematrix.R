@@ -1,4 +1,4 @@
-## "makeCacheMatrix" creates a matrix object that can store a cache of its inverse. "cacheSolve" calls the inverse 
+## "makeCacheMatrix" creates a matrix object and can store a cache of said matrix's inverse. "cacheSolve" calls the inverse 
 ## of the matrix object from "makeCacheMatrix" if it exists; if the inverse does not exists, "cacheSolve" 
 ## will compute the inverse.
 
